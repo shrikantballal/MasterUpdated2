@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content">
+	<RelativeLayout 
+	    android:id="@+id/linearLayout1" 
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content">
+	    
+	 <ImageView 
+	     android:id="@+id/album_img" 
+	     android:layout_width="wrap_content" 
+	     android:layout_height="wrap_content"
+	     android:layout_alignParentBottom="true"/>
+	<RelativeLayout
+	    android:id="@+id/RelativeLayout3" 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/album_img"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentBottom="true"
+	    android:background="@drawable/photo_folder_bg"
+	    >
+	    <ImageView 
+	        android:id="@+id/ImageView3" 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/photo_folder"
+		    android:layout_alignParentLeft="true"
+		    android:layout_alignBottom="@+id/album_img"
+		    android:layout_centerVertical="true"
+	        />
+	    <TextView
+	     android:id="@+id/album_name"
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	     android:layout_toRightOf="@+id/ImageView3"
+	     android:layout_alignBottom="@+id/album_img"
+	     android:textColor="@color/white"
+	     android:textSize="8sp" 
+	     android:gravity="center_vertical" 
+	     android:lines="2"
+	     android:paddingRight="1dip"
+	     android:textStyle="bold"
+	     android:singleLine="true"
+	     android:layout_centerVertical="true"/>
+	</RelativeLayout>
+	
+	<!--  <TextView
+	     android:id="@+id/album_name"
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	     android:layout_alignBottom="@+id/album_img"
+	     android:layout_alignParentLeft="true"
+	     android:background="@drawable/album_txt_bg"
+	     android:textColor="@color/white"
+	     android:textSize="10sp" 
+	     android:gravity="center_vertical" 
+	     android:paddingLeft="37dp" 
+	     android:lines="2"/> -->
+	
+	</RelativeLayout>
+</RelativeLayout>

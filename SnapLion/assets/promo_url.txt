@@ -1,0 +1,34 @@
+[
+	{
+		"headline":"promo head AAA",
+		"description":"promo desc AAA",
+		"url":"www.google.com",
+		"image_thumb":"http:\/\/dev.snaplion.com\/dev\/img\/uploads\/thumbnail_1351665929.jpg",
+		"image_thumb_big":"http:\/\/dev.snaplion.com\/dev\/img\/uploads\/thumbnail_1351665929.jpg",
+		"image_big":"http:\/\/dev.snaplion.com\/dev\/img\/uploads\/resize_1351665929.jpg"
+	},
+	{
+		"headline":"promo head BBB",
+		"description":"promo desc BBB",
+		"url":"",
+		"image_thumb":"http:\/\/dev.snaplion.com\/dev\/img\/uploads\/thumbnail_1351665929.jpg",
+		"image_thumb_big":"http:\/\/dev.snaplion.com\/dev\/img\/uploads\/thumbnail_1351665929.jpg",
+		"image_big":"http:\/\/dev.snaplion.com\/dev\/img\/uploads\/resize_1351665929.jpg"
+	},
+	{
+		"headline":"promo head CCC",
+		"description":"promo desc CCC",
+		"url":"www.google.com",
+		"image_thumb":"http:\/\/dev.snaplion.com\/dev\/img\/uploads\/thumbnail_1351665929.jpg",
+		"image_thumb_big":"http:\/\/dev.snaplion.com\/dev\/img\/uploads\/thumbnail_1351665929.jpg",
+		"image_big":"http:\/\/dev.snaplion.com\/dev\/img\/uploads\/resize_1351665929.jpg"
+	},
+	{
+		"headline":"promo head DDD",
+		"description":"promo desc DDD",
+		"url":"",
+		"image_thumb":"http:\/\/dev.snaplion.com\/dev\/img\/uploads\/thumbnail_1351665929.jpg",
+		"image_thumb_big":"http:\/\/dev.snaplion.com\/dev\/img\/uploads\/thumbnail_1351665929.jpg",
+		"image_big":"http:\/\/dev.snaplion.com\/dev\/img\/uploads\/resize_1351665929.jpg"
+	}
+]

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fanwall_bubble_thumb_text_size">15sp</dimen>
+    <dimen name="bottom_tabs_text_size">8sp</dimen>
+    <dimen name="bottom_tabs_width">63dip</dimen>
+    <dimen name="bottom_tabs_height">60dip</dimen>
+    <dimen name="bottom_tabs_text_right_padding">5dip</dimen>
+    <dimen name="bottom_tabs_text_left_padding">6dip</dimen>
+    
+</resources>

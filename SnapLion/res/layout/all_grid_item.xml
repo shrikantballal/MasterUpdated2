@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/all_grid_img_parent"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	>
+	<ImageView 
+	    android:id="@+id/gridButtonImage"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+	    />
+	<TextView
+		android:id="@+id/all_grid_item_text"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="@color/white" 
+		android:textSize="13sp" 
+		android:layout_marginLeft="10dp" 
+		android:singleLine="true"
+		android:layout_alignBottom="@+id/gridButtonImage"
+		android:layout_marginBottom="8dip">
+	</TextView>
+</RelativeLayout>
+
+
+
+
+
+<!-- <LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/all_grid_img"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:gravity="bottom|left" 
+	android:paddingBottom="8dp">
+	
+	<TextView
+		android:id="@+id/all_grid_item_text"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="@color/white" 
+		android:textSize="13sp" 
+		android:layout_marginLeft="10dp" 
+		android:singleLine="true">
+	</TextView>
+</LinearLayout> -->

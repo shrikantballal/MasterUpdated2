@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/app_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/preview_app_scr_bg"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout_topBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/topbar_sm" 
+        android:layout_alignParentTop="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_back_btn"
+            android:visibility="invisible" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/home"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/top_header_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingBottom="1dp"
+            android:text="Choose App"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/topbar_hf" />
+    </RelativeLayout>
+	<ImageView 
+	    android:id="@+id/appIconImage"
+        android:layout_width="220dip"
+        android:layout_height="220dip"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/RelativeLayout_topBar"
+        android:src="@drawable/preview_app_btn_bg"
+        android:layout_marginTop="50dip"
+	    />
+	<TextView 
+	    android:id="@+id/appName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/appIconImage"
+        android:layout_marginTop="15dip"
+        android:text="App Name"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:gravity="center_horizontal"
+	    />
+	<Button 
+	    android:id="@+id/simulateButton"
+        android:layout_width="220dip"
+        android:layout_height="35dip"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/appName"
+        android:layout_marginTop="40dip"
+        android:background="@drawable/preview_simulate_btn"
+	    />
+    <RelativeLayout
+        android:id="@+id/logout_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/topbar_sm" 
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/logout_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" 
+            android:gravity="center"/>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/topbar_hf" />
+    </RelativeLayout>
+
+</RelativeLayout>

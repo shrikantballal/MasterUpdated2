@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="List">
+		<item name="android:background">@drawable/list_color</item>
+	</style>
+	<style name="Comments">
+		<item name="android:background">@drawable/comments_xml</item>
+	</style>
+	<style name="Description">
+		<item name="android:background">@drawable/description_xml</item>
+	</style>
+	<style name="Forword">
+		<item name="android:background">@drawable/forword_xml</item>
+	</style>
+	 
+   <style name="SeekBar">
+    <item name="android:indeterminateOnly">false</item>
+    <item name="android:progressDrawable">@android:drawable/progress_horizontal</item>
+    <item name="android:indeterminateDrawable">@android:drawable/progress_horizontal</item>
+    <item name="android:minHeight">12dip</item>
+    <item name="android:maxHeight">12dip</item>
+<!--     <item name="android:thumbOffset">10px</item>
+ -->    <item name="android:focusable">true</item>
+  </style>
+</resources>

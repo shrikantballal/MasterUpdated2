@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:paddingLeft="5dip"
+    android:paddingRight="5dip">
+    <TextView
+        android:id="@+id/playerName_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Yuvraj Singh" 
+        android:textColor="#505050"
+       	android:textStyle="bold"
+       	android:textSize="11sp"
+       	android:gravity="left"
+       	android:singleLine="true"
+        />
+    <TextView
+        android:id="@+id/playerOvers_TextView"
+        android:layout_width="25dip"
+        android:layout_height="wrap_content"
+        android:text="020" 
+        android:textColor="#505050"
+        android:textStyle="bold"
+        android:layout_marginRight="5dip"
+        android:textSize="11sp"
+        android:gravity="left"
+        />
+    
+	<TextView
+        android:id="@+id/playerBalls_TextView"
+        android:layout_width="25dip"
+        android:layout_height="wrap_content"
+        android:text="003" 
+        android:textColor="#505050"
+        android:textStyle="normal"
+        android:layout_marginRight="5dip"
+        android:textSize="11sp"
+        android:gravity="left"
+        />
+	
+    <TextView
+        android:id="@+id/playerRun_TextView"
+        android:layout_width="25dip"
+        android:layout_height="wrap_content"
+        android:text="008" 
+        android:textColor="#505050"
+        android:textStyle="bold"
+        android:layout_marginRight="5dip"
+        android:textSize="11sp"
+        android:gravity="left"
+        />
+
+    <TextView
+        android:id="@+id/playerWicket_TextView"
+        android:layout_width="25dip"
+        android:layout_height="wrap_content"
+        android:text="002" 
+        android:textColor="#505050"
+        android:textStyle="normal"
+        android:layout_marginRight="5dip"
+        android:textSize="11sp"
+        android:gravity="left"
+        />
+
+    <TextView
+        android:id="@+id/playerEconomyRate_TextView"
+        android:layout_width="35dip"
+        android:layout_height="wrap_content"
+        android:text="400.2" 
+        android:textColor="#505050"
+        android:textStyle="normal"
+        android:textSize="11sp"
+        android:gravity="left"
+        />
+
+</LinearLayout>

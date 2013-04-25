@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" android:background="@drawable/main" android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:layout_marginTop="30dp" android:orientation="vertical" android:paddingLeft="45dp" android:paddingRight="45dp">
+
+        <EditText
+            android:id="@+id/user_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:hint="email" android:singleLine="true" android:textSize="13sp" android:paddingLeft="7dp">
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/pwd_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" android:hint="password" android:singleLine="true" android:password="true" android:paddingLeft="7dp" android:textSize="13sp" android:layout_marginTop="20dp"/>
+   <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:orientation="horizontal" android:layout_gravity="fill_horizontal" android:layout_marginTop="20dp">
+	<Button
+	    android:id="@+id/login_btn"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/login_button" android:layout_marginRight="35dp" android:layout_marginLeft="3dp"/>
+	<Button
+	    android:id="@+id/reset_btn1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/reset_btn"/>
+
+	
+
+	</LinearLayout>
+    </LinearLayout>
+</LinearLayout>

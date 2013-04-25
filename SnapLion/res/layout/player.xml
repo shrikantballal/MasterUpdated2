@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    >
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_weight="1" 
+	    >
+	
+	    <ImageButton
+	        android:id="@+id/player_play_btn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@android:color/transparent"
+	        android:src="@drawable/mp_play" />
+	
+	    <ImageButton
+	        android:id="@+id/player_forword_btn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/mp_next" 
+	        android:background="@android:color/transparent"/>
+	
+	    <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:paddingLeft="5dp"
+	        android:paddingRight="5dp" 
+	        android:background="@drawable/mp_bg">
+	        <com.snaplion.custom.TextViewMarquee
+	                android:id="@+id/player_track_name"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="left"
+	                android:ellipsize="marquee"
+	                android:marqueeRepeatLimit="marquee_forever"
+	                android:scrollHorizontally="true"
+	                android:singleLine="true"
+	                android:textColor="@color/white"
+	                android:textSize="8sp" 
+	                android:text="KINGS XI THEME SONG"
+	                android:layout_alignParentTop="true"/>
+	        <LinearLayout
+		            android:id="@+id/seekBarParentLayout"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginBottom="6dip"
+		            android:orientation="horizontal" 
+		            android:gravity="center_vertical"
+		            android:layout_below="@+id/player_track_name">
+		
+		            <SeekBar
+		                android:id="@+id/player_seekbar"
+		                style="@style/SeekBar"
+		                android:layout_width="fill_parent"
+		                android:layout_height="6dip"
+		                android:max="99"
+		                android:progress="1"
+		                android:thumb="@drawable/mp_seak_ball" 
+		                android:layout_weight="1"
+		                >
+		            </SeekBar>
+		
+		            <TextView
+		                android:id="@+id/player_timer"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:gravity="right"
+		                android:singleLine="true"
+		                android:text="00:00"
+		                android:textColor="@color/white"
+		                android:textSize="7sp" 
+		                android:layout_marginLeft="5dip"/>
+	        </LinearLayout>
+	   	</RelativeLayout>
+		<ImageView
+			android:id="@+id/player_close_btn"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/mp_close" />
+	</LinearLayout>
+</LinearLayout>
+
+
+<!--
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+	<LinearLayout 
+	    android:layout_width="match_parent" 
+	    android:orientation="horizontal"
+		android:layout_height="wrap_content">
+		<LinearLayout 
+		    android:orientation="horizontal" 
+		    android:background="@drawable/audio_player_bg" 
+		    android:layout_width="match_parent" 
+		    android:layout_height="fill_parent" 
+		    android:layout_weight="1">
+		<ImageButton 
+		    android:id="@+id/player_play_btn" 
+		    android:layout_width="wrap_content" 
+		    android:layout_height="fill_parent" 
+		    android:src="@drawable/audio_player_play" 
+		    android:background="@android:color/transparent"/>
+		<ImageButton 
+		    android:layout_width="wrap_content" 
+		    android:id="@+id/player_forword_btn" 
+		    android:layout_height="fill_parent" 
+		    style="@style/Forword" 
+		    android:background="@drawable/audio_forword"/>
+			<LinearLayout 
+			    android:layout_width="match_parent" 
+			    android:orientation="vertical"
+				android:layout_height="fill_parent" 
+				android:paddingLeft="5dp" 
+				android:layout_marginRight="2dp" 
+				android:paddingRight="5dp" 
+				android:layout_weight="1"
+				>
+				<LinearLayout 
+				    android:layout_width="match_parent" 
+				    android:orientation="horizontal"
+					android:layout_height="wrap_content" 
+					android:layout_marginTop="4dp" 
+					android:paddingRight="6dp">
+
+					<com.snaplion.custom.TextViewMarquee
+					    android:id="@+id/player_track_name"
+					    android:layout_width="0dp"
+					    android:layout_height="wrap_content"
+					    android:layout_gravity="left"
+					    android:layout_weight="1"
+					    android:paddingLeft="6dp"
+					    android:singleLine="true"
+					    android:ellipsize="marquee"
+					    android:marqueeRepeatLimit="marquee_forever"
+					    android:scrollHorizontally="true"
+					    android:textColor="@color/white"
+					    android:textSize="12sp" />
+
+					<TextView android:textSize="10sp" android:textColor="@color/white"  android:singleLine="true"
+						android:layout_height="wrap_content" android:id="@+id/player_timer"
+						android:text="00:00" android:layout_width="45dp" android:gravity="right" android:layout_gravity="right"/>
+				</LinearLayout>
+					<SeekBar 
+					    android:id="@+id/player_seekbar"  
+					    android:layout_width="fill_parent" 
+					    android:layout_height="22dp" 
+					    android:thumb="@drawable/stroke_slider" 
+					    style="@style/SeekBar" 
+					    android:progress="1" 
+					    android:max="99" 
+					    android:paddingLeft="6dp" 
+					    android:paddingRight="6dp"
+					    android:layout_marginBottom="6dip"
+					    ></SeekBar>
+						<View android:layout_width="6dip" android:layout_height="6dip"/>
+				</LinearLayout>
+			<ImageView android:id="@+id/player_close_btn" android:background="@drawable/close" android:layout_width="wrap_content" android:layout_height="fill_parent"/>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>
+-->

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:gravity="center" android:background="@drawable/trans_bg">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" android:background="@drawable/popup_bg" android:padding="8dp">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Push Received" android:layout_gravity="center" android:textSize="20dp" android:textColor="@color/white" android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/push_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View" android:layout_gravity="center_horizontal" android:layout_marginTop="12dp" android:background="@drawable/black_left_bar" android:textColor="@color/white" android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/push_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel" android:layout_gravity="center_horizontal" android:layout_marginTop="12dp" android:background="@drawable/black_left_bar" android:textColor="@color/white" android:textSize="16sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:orientation="horizontal"
+	android:layout_height="wrap_content" android:padding="10dp">
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="horizontal" android:layout_height="wrap_content"
+		android:layout_width="fill_parent">
+
+		<TextView android:id="@+id/songText" android:singleLine="true"
+			android:text="Hi" android:ellipsize="marquee" android:textColor="#ffffff"
+			android:layout_height="wrap_content" android:layout_width="134dp" android:layout_marginLeft="20dp" android:textSize="10dp"/>
+
+		<TextView android:text="Hi" android:layout_height="wrap_content"
+			android:id="@+id/artisText" android:ellipsize="marquee"
+			android:textColor="#ffffff" android:gravity="left"
+			android:layout_width="76dp" android:textSize="10dp"/>
+
+
+		<TextView android:text="Hi" android:id="@+id/buyText"
+			android:ellipsize="marquee" android:textColor="#ffffff"
+			android:layout_weight="0.09" android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal" android:gravity="center_horizontal"
+			 android:layout_width="fill_parent" android:textSize="10dp"/>
+	</LinearLayout>
+</LinearLayout>

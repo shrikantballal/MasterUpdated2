@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/track_play_bg"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+	<ImageView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="fill_parent"
+	    android:src="@drawable/music_bar_arrow"
+	    android:layout_marginLeft="3dp"
+	    android:layout_marginRight="3dp"
+	    />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/song_name_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/songText"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="1dp"
+                android:lines="2"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+			<View android:layout_width="1dip" android:layout_height="match_parent" android:background="#787777" android:layout_marginRight="5dp"/>
+            <TextView
+                android:id="@+id/artisText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:lineSpacingExtra="1dp"
+                android:lines="2"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/song_buy_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="horizontal" >
+			<View android:layout_width="1dip" android:layout_height="match_parent" android:background="#787777"/>
+            <TextView
+                android:id="@+id/buyText"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center"
+                android:lineSpacingExtra="1dp"
+                android:lines="2"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

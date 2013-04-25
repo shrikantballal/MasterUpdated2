@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:id="@+id/contact_main_bg">
+    <LinearLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:id="@+id/imAdview"
+		android:layout_alignParentTop="true"/>   
+  <LinearLayout 
+    android:id="@+id/contact_top_bar" 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:layout_alignParentLeft="true"
+    android:layout_marginBottom="5dp" 
+    android:layout_below="@+id/imAdview"
+    >
+    </LinearLayout>
+
+    <LinearLayout 
+        android:id="@+id/linearLayout2" 
+        android:layout_width="match_parent" 
+        android:layout_height="match_parent"
+      android:layout_below="@+id/contact_top_bar" 
+      android:orientation="vertical" 
+      android:weightSum="1" 
+      android:layout_marginLeft="8dp" 
+      android:layout_marginRight="8dp" 
+      android:layout_marginBottom="8dp">
+      
+    <ScrollView
+	    android:id="@+id/SCROLLER_ID"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:scrollbars="vertical"
+	    android:fillViewport="true"
+	    android:layout_weight="1.0" 
+	    >
+        <TextView 
+              android:id="@+id/contact_msg" 
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content"
+           	  android:layout_weight="1.0" 
+           	  android:textColor="@color/white" 
+           	  android:autoLink="all" 
+           	  android:background="@drawable/trans_bg" 
+           	  android:textSize="14sp"
+           	  android:paddingTop="5dp"
+           	  android:paddingLeft="5dp"
+           	  android:paddingRight="5dp"
+           	  android:paddingBottom="35dp"
+           	  />
+
+    </ScrollView>
+          
+         <LinearLayout 
+             android:id="@+id/contact_tab_bar" 
+             android:layout_width="fill_parent" 
+             android:layout_height="66dp" 
+             android:orientation="horizontal" 
+             android:paddingBottom="8dp" 
+             android:layout_marginLeft="8dp" 
+             android:layout_marginRight="8dp" 
+             android:visibility="gone"/>
+
+         
+  	</LinearLayout>
+  	<LinearLayout
+             android:id="@+id/contact_bottom_bar"
+             android:layout_width="fill_parent"
+             android:layout_height="58dp"
+             android:layout_marginTop="5dp"
+             android:layout_weight="1"
+             android:orientation="horizontal" 
+             android:visibility="gone"
+             android:layout_alignParentBottom="true"
+             android:background="@drawable/tabs_bottom_bg" 
+             >
+         </LinearLayout>
+</RelativeLayout>

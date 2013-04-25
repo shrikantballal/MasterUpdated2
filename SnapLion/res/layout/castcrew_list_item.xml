@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dip" >
+
+    <!-- <ImageView
+        android:id="@+id/userImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/comment_user_logo" /> -->
+
+    <RelativeLayout 
+		android:id="@+id/commentBodyImage_ImageViewParent"
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true"
+        >
+        <ProgressBar 
+     		 android:id="@+id/commentBodyImage_ProgressBar"
+	         android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+	         android:visibility="gone" 
+	         />
+        <ImageView
+		     android:id="@+id/userImage"
+		     android:layout_width="50dp"
+		     android:layout_height="50dip"
+		     />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/actorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_toRightOf="@+id/commentBodyImage_ImageViewParent"
+        android:singleLine="true"
+        android:text="Nail Patrick Harris"
+        android:textColor="@color/white" />
+
+    
+
+    <TextView
+        android:id="@+id/characterName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/actorName"
+        android:layout_marginLeft="10dip"
+        android:layout_toRightOf="@+id/commentBodyImage_ImageViewParent"
+        android:singleLine="true"
+        android:text="Bertney stintson"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

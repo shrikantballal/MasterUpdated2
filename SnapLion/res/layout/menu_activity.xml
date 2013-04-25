@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:id="@+id/album_main_bg" 
+    >
+    <LinearLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:id="@+id/imAdview"
+		android:layout_alignParentTop="true"/>   
+  <LinearLayout 
+     	android:id="@+id/photo_top_bar" 
+      	android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" 
+	    android:layout_alignParentLeft="true"
+	    android:layout_marginBottom="5dp"
+	    android:layout_below="@+id/imAdview"
+	    >
+    </LinearLayout>
+    <LinearLayout 
+        android:id="@+id/linearLayout2" 
+        android:layout_width="match_parent" 
+        android:layout_height="match_parent"
+      android:layout_below="@+id/photo_top_bar" 
+      android:orientation="vertical"
+      android:layout_marginLeft="8dip"
+    android:layout_marginRight="8dip"
+    android:layout_marginBottom="8dip">
+          <!-- <GridView 
+              android:id="@+id/album_grid" 
+              android:layout_width="fill_parent"
+          	android:layout_height="fill_parent"
+          	android:numColumns="3" 
+          	android:verticalSpacing="5dp" 
+          	android:horizontalSpacing="5dp" 
+          	android:gravity="left" 
+          	android:layout_weight="1" 
+          	android:cacheColorHint="#00000000" 
+          	android:scrollbarStyle="outsideOverlay"/> -->
+          	<FrameLayout 
+          		android:id="@+id/menu_home_activity"
+            	android:layout_width="match_parent"
+            	android:layout_height="wrap_content" 
+            	android:layout_weight="1"/>
+          	<View 
+          	    android:id="@+id/menu_home_activity_bottom_place_holder" 
+          	    android:layout_height="58dp" 
+          	    android:layout_width="1dip"
+          	    android:visibility="gone"
+          	    />
+    </LinearLayout>
+  	<LinearLayout 
+            android:id="@+id/album_tab_bar" 
+            android:layout_width="fill_parent" 
+            android:layout_height="58dp" 
+            android:orientation="horizontal" 
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/tabs_bottom_bg" />
+</RelativeLayout>

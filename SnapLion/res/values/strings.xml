@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_id">222</string>
+	<string name="app_name">Kings XI</string>
+	
+	<string name="no_net_not_downloaded">No network connection found. Please try later</string>
+    <string name="no_image_to_share">Sorry, no image to share.</string>
+    <string name="unable_to_play">Unable to play this file format</string>
+	<string name="splash_loading_msg">Loading, please wait...</string>
+	<string name="msg_comingsoon">Comming soon...</string>
+	<string name="msg_server_problem">"Server has technical Problem.Please try again.!"</string>
+	
+	<string name="denied">You perhaps denied permissions</string>
+    
+    <string name="consumerKey">4lEXATmR7bdZWgjmjDLt7w</string>
+    <string name="consumerSecret">TEfxuJficRZD5NqAvBhze8X1rcS05apVg8sEkGy45k</string>
+	
+    <!-- facebook login -->
+    <!-- <string name="facebook_app_id">467637383261577</string> for production-->
+    <string name="facebook_app_id">467637383261577</string>
+    
+    <!-- //220495874746063 -->
+    <string name="fb_login_success">Facebook login successful.</string>
+    <string name="fb_login_failed">Facebook login failed.Please try again.</string>
+    <string name="fb_logout_success">Facebook logout successful.</string>
+    <string name="fb_logout_failed">Facebook logout failed.</string>
+    <string name="tw_login_success">Twitter login successful.</string>
+    <string name="tw_login_failed">Twitter login failed.Please try again.</string>
+    <string name="tw_logout_success">Twitter logout successful.</string>
+    <string name="tw_logout_failed">Twitter logout failed.</string>
+    
+    <string name="post_approval_pending">Artist has blocked you.</string>
+    <string name="user_blocked">Pending Approval</string>
+    <string name="posted_successfully">Your post have been done successfully.</string>
+    
+    <!-- inmobi app id -->
+    <string name="inmobi_test_app_id">4028cba631d63df10131e1d3818b00cc</string><!-- test inmobi testAppID -->
+    
+</resources>

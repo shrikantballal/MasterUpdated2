@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:id="@+id/album_main_bg" 
+    >
+    <LinearLayout
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:id="@+id/imAdview"
+		android:layout_alignParentTop="true"/> 
+  <LinearLayout 
+      android:id="@+id/photo_top_bar" 
+      android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/imAdview">
+    </LinearLayout>
+    <LinearLayout 
+        android:id="@+id/linearLayout2" 
+        android:layout_width="match_parent" 
+        android:layout_height="match_parent"
+      android:layout_below="@+id/photo_top_bar" 
+      android:orientation="vertical"
+      android:paddingBottom="5dip"
+    >
+          <GridView 
+              android:id="@+id/album_grid" 
+              android:layout_width="fill_parent"
+	          android:layout_height="fill_parent"
+	          android:numColumns="3" 
+	          android:verticalSpacing="1dp" 
+	          android:horizontalSpacing="1dp" 
+	          android:gravity="left" 
+	          android:layout_weight="1" 
+	          android:cacheColorHint="#00000000" 
+	          android:scrollbarStyle="outsideOverlay"/>
+       <!-- <LinearLayout 
+           android:id="@+id/photo_player_layout" 
+           android:layout_width="fill_parent"
+      		android:layout_height="45dp" 
+      		android:orientation="horizontal" 
+      		android:layout_marginTop="5dp"/> -->
+        
+  	</LinearLayout>
+  	<LinearLayout 
+            android:id="@+id/album_tab_bar" 
+            android:layout_width="fill_parent" 
+            android:layout_height="58dp" 
+            android:orientation="horizontal" 
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/tabs_bottom_bg" />
+</RelativeLayout>

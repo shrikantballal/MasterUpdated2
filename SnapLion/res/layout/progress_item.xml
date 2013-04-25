@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:shrinkColumns="0,2"
+    android:stretchColumns="0,2" >
+
+    <TableRow>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:id="@+id/progressParentLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" >
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                style="@android:style/Widget.ProgressBar.Small"/>
+            <TextView 
+                android:id="@+id/progressBarLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/progressBar"
+                android:text="@string/splash_loading_msg"
+                android:textColor="@color/black"/>
+
+            
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+</TableLayout>

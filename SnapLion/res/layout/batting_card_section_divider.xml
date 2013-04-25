@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    >
+
+    <LinearLayout
+        android:id="@+id/extrasRoot_LinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" 
+        android:weightSum="2"
+        android:layout_gravity="center_horizontal"
+        >
+        <TextView
+            android:id="@+id/extras_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Extras ( b 0, ib 4, w 7, nb 1 ): 13" 
+            android:textColor="#505050"
+            android:textStyle="normal"
+            android:textSize="10sp"
+            android:layout_weight="1"
+            android:paddingLeft="20dip"/>
+        <TextView
+            android:id="@+id/totalScore_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total: 73/0 (13.2)" 
+            android:textColor="#505050"
+            android:textStyle="normal"
+            android:textSize="10sp"
+            android:layout_weight="1"
+            android:paddingLeft="20dip"
+            />
+    </LinearLayout>
+    
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" 
+	    android:background="@drawable/matches_list_section_bg"
+	    android:gravity="center_vertical">
+	
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" 
+	        android:layout_weight="1"
+	        android:paddingLeft="5dip">
+	
+	        <TextView
+	            android:id="@+id/sectionName_TextView"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:text="Batting" 
+	            android:textColor="#ffffff"
+	        	android:textStyle="bold"
+	        	android:textSize="10sp"
+	        	/>
+	    </LinearLayout>
+	    <TextView
+	        android:id="@+id/playerRun_TextView"
+	        android:layout_width="25dip"
+	        android:layout_height="wrap_content"
+	        android:text="" 
+	        android:textColor="#ffffff"
+	        android:textStyle="bold"
+	        android:textSize="10sp"
+	        android:gravity="left"
+	        android:layout_marginRight="5dip"/>
+	
+	    <TextView
+	        android:id="@+id/playerBall_TextView"
+	        android:layout_width="25dip"
+	        android:layout_height="wrap_content"
+	        android:text="" 
+	        android:textColor="#ffffff"
+	        android:textStyle="bold"
+	        android:textSize="10sp"
+	        android:gravity="left"
+	        android:layout_marginRight="5dip"/>
+	
+	    <TextView
+	        android:id="@+id/playerFours_TextView"
+	        android:layout_width="25dip"
+	        android:layout_height="wrap_content"
+	        android:text="" 
+	        android:textColor="#ffffff"
+	        android:textStyle="bold"
+	        android:textSize="10sp"
+	        android:gravity="left"
+	        android:layout_marginRight="5dip"/>
+	
+	    <TextView
+	        android:id="@+id/playerSixes_TextView"
+	        android:layout_width="25dip"
+	        android:layout_height="wrap_content"
+	        android:text="" 
+	        android:textColor="#ffffff"
+	        android:textStyle="bold"
+	        android:textSize="10sp"
+	        android:gravity="left"
+	        android:layout_marginRight="5dip"/>
+	
+	    <TextView
+	        android:id="@+id/playerStrikeRate_TextView"
+	        android:layout_width="35dip"
+	        android:layout_height="wrap_content"
+	        android:text="" 
+	        android:textColor="#ffffff"
+	        android:textStyle="bold"
+	        android:textSize="10sp"
+	        android:gravity="left"
+	        android:layout_marginRight="5dip"/>
+	</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.snaplion.kingsxi" 
+    android:installLocation="auto"
+    android:versionCode="7"
+    android:versionName="1.6" >
+
+ 	<uses-sdk 
+ 	    android:minSdkVersion="8" 
+ 	    android:targetSdkVersion="17"
+ 	    />
+ 	<supports-screens 
+ 	    android:smallScreens="true" 
+ 	    android:normalScreens="true"
+ 	    android:largeScreens="true"
+ 	    android:resizeable="true" 
+ 	    android:anyDensity="true"
+ 	    />
+ 	<!-- permissions -->
+    <permission android:name="com.snaplion.kingsxi.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.snaplion.kingsxi.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-feature android:name="android.hardware.camera" android:required="false"/>
+	<uses-feature android:name="android.hardware.telephony" android:required="false"/>
+	<uses-permission android:name="android.permission.CALL_PHONE"/>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.VIBRATE"/>
+    <application
+        android:icon="@drawable/icon" 
+        android:label="@string/app_name" 
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+        android:screenOrientation="portrait" 
+        android:largeHeap="true"
+        >
+       
+        <!-- Used for install referrer tracking -->
+	    <receiver android:name="com.google.android.apps.analytics.AnalyticsReceiver"
+	              android:exported="true">
+	      <intent-filter>
+	        <action android:name="com.android.vending.INSTALL_REFERRER" />
+	      </intent-filter>
+	    </receiver>
+    
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"   
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <!-- Receives the registration id. -->
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <category android:name="com.snaplion.kingsxi" />
+            </intent-filter>
+        </receiver>
+     <activity 
+         android:label="@string/app_name" 
+         android:name="com.snaplion.kingsxi.SLMyAppSplashActivity" 
+         android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+         android:screenOrientation="portrait"  
+         android:clearTaskOnLaunch="true" 
+         >
+         <!-- <intent-filter >
+             <action android:name="android.intent.action.MAIN" />
+             <category android:name="android.intent.category.LAUNCHER" />
+         </intent-filter> -->
+     </activity>
+     <!-- add network inmobi -->
+     <activity android:name="com.inmobi.androidsdk.IMBrowserActivity" 
+     android:configChanges="keyboardHidden|orientation|keyboard|smallestScreenSize|screenSize" />
+     <!-- promo section start -->
+     <activity 
+         android:name="com.snaplion.promo.PromoActivity" 
+         android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+         android:screenOrientation="portrait"  
+         android:clearTaskOnLaunch="true" 
+         
+         >
+     </activity>
+     <activity 
+         android:name="com.snaplion.promo.PromoDetailsActivity" 
+         android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+         android:screenOrientation="portrait"  
+         android:clearTaskOnLaunch="true" 
+         
+         >
+     </activity>
+     <activity 
+         android:name="com.snaplion.promo.PromoURLActivity" 
+         android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+         android:screenOrientation="portrait"  
+         android:clearTaskOnLaunch="true" 
+         
+         >
+     </activity>
+     <!-- promo section end -->
+     <!-- menu section start -->
+     <activity 
+         android:name="com.snaplion.menus.MenusActivity" 
+         android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+         android:screenOrientation="portrait"  
+         android:clearTaskOnLaunch="true" 
+         
+         >
+     </activity>
+     <activity 
+         android:name="com.snaplion.menus.MenuAlbumActivity" 
+         android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+         android:screenOrientation="portrait"  
+         android:clearTaskOnLaunch="true" 
+         
+         >
+     </activity>
+     <activity 
+         android:name="com.snaplion.menus.MenuGalleryActivity1" 
+         android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+         android:screenOrientation="portrait"  
+         android:clearTaskOnLaunch="true" 
+         
+         >
+     </activity>
+     <activity 
+         android:name="com.snaplion.menus.MenusGallery" 
+         android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+         android:configChanges="orientation"  
+         android:clearTaskOnLaunch="true" 
+         
+         >
+     </activity>
+     <!-- menu section end -->
+     <activity 
+         android:name="com.snaplion.castcrew.MultibioCategoryListActivity" 
+         android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+         android:screenOrientation="portrait"  
+         android:clearTaskOnLaunch="true" 
+         
+         >
+     </activity>
+     <activity 
+         android:name="com.snaplion.castcrew.MultibioActorsListActivity" 
+         android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+         android:screenOrientation="portrait"  
+         android:clearTaskOnLaunch="true" 
+         
+         >
+     </activity>
+     <activity 
+         android:name="com.snaplion.castcrew.MultibioActorsListDetailActivity" 
+         android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+         android:screenOrientation="portrait"  
+         android:clearTaskOnLaunch="true" 
+         
+         />
+     <activity 
+         android:name="com.snaplion.fanwall.photo.PhotoAlbumGalleryImageComments" 
+         android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+         android:screenOrientation="portrait"  
+         android:clearTaskOnLaunch="true" 
+         
+         />
+     <activity 
+         android:name="com.snaplion.fanwall.photo.PhotoAlbumGalleryImagePreview" 
+         android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+         android:configChanges="orientation"  
+         android:clearTaskOnLaunch="true" 
+         
+         />   
+     <activity 
+         android:name="com.snaplion.fanwall.photo.PhotoAlbumGallery" 
+         android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+         android:screenOrientation="portrait"  
+         android:clearTaskOnLaunch="true" 
+         
+         />   
+     
+     <activity 
+         android:name="com.snaplion.fanwall.wall.FanwallWallActivity" 
+         android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+         android:screenOrientation="portrait"  
+         android:clearTaskOnLaunch="true" 
+         
+         />
+     <activity 
+         android:name="com.snaplion.fanwall.LoginActivity" 
+         android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+         android:screenOrientation="portrait"  
+         android:clearTaskOnLaunch="true" 
+         
+         >
+     </activity>
+     <activity 
+         android:name="com.snaplion.fanwall.FanwallAddCommentActivity" 
+         android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+         android:screenOrientation="portrait"  
+         android:clearTaskOnLaunch="true" 
+         
+         />
+     <activity 
+         android:name="com.snaplion.fanwall.wall.FanwallWallComentDetailsActivity" 
+         android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+         android:screenOrientation="portrait"  
+         android:clearTaskOnLaunch="true" 
+         
+         />
+     <activity 
+         android:name="com.snaplion.fanwall.wall.FanImageViewerActivity" 
+         android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+         android:screenOrientation="portrait"  
+         android:clearTaskOnLaunch="true" 
+         
+         />
+     <activity 
+         android:name="com.snaplion.kingsxi.NotifAlertDialogActivity" 
+         android:theme="@android:style/Theme.Dialog" 
+         />
+     <activity 
+         android:name="com.snaplion.kingsxi.SLMoreActivtity" 
+         android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+         android:screenOrientation="portrait"  
+         android:clearTaskOnLaunch="true" 
+         />
+     <activity 
+         android:name="com.snaplion.kingsxi.SnapLionActivity" 
+         android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+         android:screenOrientation="portrait"  
+         android:clearTaskOnLaunch="true" 
+         />
+     <activity 
+         android:name="com.snaplion.myapp.SnapLionMyAppActivity" 
+         android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+         android:screenOrientation="portrait"  
+         android:clearTaskOnLaunch="true" 
+         
+         />
+     <!-- <activity 
+         android:name="com.snaplion.myapp.SnapLionMyAppActivity" 
+         android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+         android:screenOrientation="portrait"  
+         android:clearTaskOnLaunch="true" 
+         /> -->
+     <!-- <activity android:name="com.snaplion.myapp.SLMyAppSplashActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:screenOrientation="portrait"  android:clearTaskOnLaunch="true" /> -->
+   
+     <activity 
+         android:name="com.snaplion.bio.SLBioActivity" 
+         android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+         android:screenOrientation="portrait"  
+         android:clearTaskOnLaunch="true" 
+         />
+     <activity 
+         android:name="com.snaplion.photos.SLPhotosActivity" 
+         android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+         android:screenOrientation="portrait"  
+         android:clearTaskOnLaunch="true" 
+         />
+     <activity 
+         android:name="com.snaplion.photos.SLPhotoAlbumActivity" 
+         android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+         android:screenOrientation="portrait"  
+         android:clearTaskOnLaunch="true" 
+         />
+     <activity 
+         android:name="com.snaplion.photos.SLPhotoGalleryActivity1"  
+         android:configChanges="orientation" 
+         android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+         android:clearTaskOnLaunch="true" 
+         />
+     
+     <!-- <activity android:name="com.Snaplion.photos.ImageViewFlipper" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:screenOrientation="sensor" android:configChanges="orientation|keyboardHidden"  android:clearTaskOnLaunch="true" /> -->
+     
+     
+     <activity 
+         android:name="com.snaplion.music.SLMusicActivity" 
+         android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+         android:screenOrientation="portrait"  
+         android:clearTaskOnLaunch="true" 
+         />
+     <activity 
+         android:name="com.snaplion.music.SLMusicBuyActivity" 
+         android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+         android:screenOrientation="portrait"  
+         android:clearTaskOnLaunch="true" 
+         />
+     
+     <activity 
+         android:name="com.snaplion.videos.SLVideoActivity" 
+         android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+         android:screenOrientation="portrait"  
+         android:clearTaskOnLaunch="true" 
+         />
+     <activity 
+         android:name="com.snaplion.videos.SLVideoDetailActivity" 
+         android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+         android:screenOrientation="portrait"  
+         android:clearTaskOnLaunch="true" 
+         />
+     
+     <activity 
+         android:name="com.snaplion.copyright.SLCopyRightActivity" 
+         android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+         android:screenOrientation="portrait" 
+         android:clearTaskOnLaunch="true" 
+         />
+     
+     <activity 
+         android:name="com.snaplion.news.SLNewsActivity" 
+         android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+         android:screenOrientation="portrait"  
+         android:clearTaskOnLaunch="true" 
+         />
+     <activity 
+         android:name="com.snaplion.news.SLEventActivity" 
+         android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+         android:screenOrientation="portrait"  
+         android:clearTaskOnLaunch="true" 
+         />
+     
+     <activity 
+         android:name="com.snaplion.news.SLNewsDetailsActivity" 
+         android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+         android:screenOrientation="portrait"  
+         android:clearTaskOnLaunch="true" 
+         />
+     <activity 
+         android:name="com.snaplion.news.SLNewsURLActivity" 
+         android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+         android:screenOrientation="portrait"  
+         android:clearTaskOnLaunch="true" 
+         />
+     <activity 
+         android:name="com.snaplion.mail.SLMailActivity" 
+         android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+         android:screenOrientation="portrait"  
+         android:clearTaskOnLaunch="true" 
+         />
+     <activity 
+         android:name="com.snaplion.contact.SLContactActivity" 
+         android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+         android:screenOrientation="portrait"  
+         android:clearTaskOnLaunch="true" 
+         />
+     <activity 
+         android:name="com.snaplion.tickets.SLTicketActivity" 
+         android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+         android:screenOrientation="portrait"  
+         android:clearTaskOnLaunch="true" 
+          />
+     <activity 
+         android:name="com.snaplion.scorecard.ScoreCardActivity" 
+         android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+         android:screenOrientation="portrait"  
+         android:clearTaskOnLaunch="true" 
+          />
+     
+     
+     <service android:name="com.snaplion.kingsxi.BGImageDownloaderService"/>
+     <service android:name="com.snaplion.kingsxi.HomeImageDownloaderService"/>
+     <service android:name=".GCMIntentService" />
+     <service android:name="com.snaplion.fanwall.wall.PostUpdateLocalService"/>
+ <!-- preview app startup -->
+     <activity 
+         android:label="@string/app_name" 
+         android:name="com.snaplion.preview.PreviewSnapLionSplashActivity" 
+         android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+         android:screenOrientation="portrait"  
+         android:clearTaskOnLaunch="true" 
+         >
+        
+      <intent-filter>
+            <action android:name="android.intent.action.MAIN"/>
+        	<category android:name="android.intent.category.LAUNCHER"/>
+     	</intent-filter>
+        
+     </activity>
+     <activity 
+         android:name="com.snaplion.preview.PreviewSnapLionMainActivity" 
+         android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+         android:screenOrientation="portrait"  
+         android:clearTaskOnLaunch="true" 
+         />
+     <activity 
+         android:name="com.snaplion.preview.PreviewSnapLionAppsSelectActvity" 
+         android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+         android:screenOrientation="portrait"  
+         android:clearTaskOnLaunch="true" 
+         />
+     <!-- Preview App Activities End -->
+  </application>
+</manifest>
